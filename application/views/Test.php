@@ -9,12 +9,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>  
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-
-
-
-
         <script >
             var json = <?= $json ?>;
         </script>
@@ -32,14 +26,16 @@
                     <th>fileId</th>
                     <th>fileTag</th>
                     <th>LastModified</th>
-                    <th>Link</th>
-                    <th>Delete</th>
+                    <th>Preview</th>
+                    <th>Select</th>
                     <th>Order</th>
                 </tr>
             </thead>
         </table>
         <button type="submit" id="button" class="btn btn-primary">Add tasks</button>
         <button id ="Exec" class="btn btn-primary">Execute task</button>
+        <button id ="delete" class="btn btn-primary">Delete</button>
+        <button id ="reset" class="btn btn-primary">Reset</button>
         <a href="<?= site_url('Accueil/Logout') ?>"><button class="btn btn-danger">Déconnexion</button></a>
         <div id="dialog-message2" title="Task ">
             <p>
